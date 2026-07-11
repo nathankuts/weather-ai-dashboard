@@ -1,0 +1,104 @@
+//More color headings required
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Dark blue background */
+body {
+  background: #0b1f3a;
+  min-height: 100vh;
+}
+
+/* Center everything */
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Page title */
+.container h1 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Search form */
+.search-form {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+/* Search box */
+.search-form input {
+  flex: 1;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Button */
+.search-form button {
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.search-form button:hover {
+  background: #2563eb;
+}
+
+/* Weather cards */
+.card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  color: #0b1f3a;
+}
+
+.card p {
+  margin: 10px 0;
+  color: #444;
+}
+
+/* Forecast rows */
+.forecast-item {
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.forecast-item:last-child {
+  border-bottom: none;
+}
+
+/* Error */
+.error {
+  color: #ff6b6b;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
